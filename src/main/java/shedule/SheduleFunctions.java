@@ -104,7 +104,7 @@ public class SheduleFunctions {
                 data = cell.getRichStringCellValue().getString();
             }
         }
-
+        ldt = ldt.minusDays(1);
         String dateLesson = Utils.getTrueDateFormat(ldt);
         dateLesson = dateLesson.replaceAll("(\\r|\\n)", " ");
 

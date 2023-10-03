@@ -20,7 +20,7 @@ public class Bot extends TelegramLongPollingBot {
 
     private Properties getPropertyFromFile() {
 
-        String rootPath = "G:\\Red\\VetBot\\src\\main\\resources\\config.properties";
+        String rootPath = "src/main/resources/config.properties";
         Properties props = new Properties();
         try {
             props.load(new FileInputStream(rootPath));
