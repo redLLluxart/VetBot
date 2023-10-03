@@ -67,7 +67,7 @@ public class Bot extends TelegramLongPollingBot {
                 sendMessage("Вы выбрали группу 1.", chatId);
                 group = "1";
                 execute(close);
-                sendMarkup(CreateMenu.createMenuMarkupGroup(), chatId, "Выбери период времени для которого тебе требуется расписание.");
+                sendMarkup(CreateMenu.createMenuMarkupPeriod(), chatId, "Выбери период времени для которого тебе требуется расписание.");
                 break;
             case "2":
                 sendMessage("Вы выбрали группу 2.", chatId);
